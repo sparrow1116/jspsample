@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <dbpool id="pool1">
+        <driver>com.mysql.jdbc.Driver</driver>
+        <host>109.123.121.27</host>
+        <port>3306</port>
+        <user>root</user>
+        <password>root</password>
+        <database>jobinfo</database>
+        <minconnum>20</minconnum>
+        <maxconnum>100</maxconnum>
+        <increasenum>5</increasenum>
+    </dbpool>
+</configuration>

@@ -1,0 +1,267 @@
+html,body,div,iframe,input {
+	margin: 0px;
+	padding: 0px;
+}
+
+html,body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+.topbar {
+	box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 1.0);
+	background-color: #3f9fd9;
+	width: 100%;
+	height: 40px;
+	z-index: 200;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	line-height: 30px;
+	margin-bottom: 5px;
+}
+
+.topbar_input {
+	height: 16px;
+	margin: 2px auto;
+	padding: 2px;
+	text-align: center;
+}
+
+.topbar_button {
+	height: 25px;
+	top: 2px;
+	left: 64%;
+	position: absolute;
+	margin: 2px 0px 0px 10px;
+	padding: 2px 6px;
+}
+
+.topbar-button {
+	top: 3px;
+	height: 25px;
+	position: absolute;
+	left: 96%;
+	padding: 2px 6px;
+}
+
+iframe {
+	border: 0px inset;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	overflow-y: scroll;
+	overflow-x: auto;
+	overflow-x: auto;
+}
+
+.leftIframe {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 0;
+}
+
+.split {
+	width: 20px;
+	top: -5px;
+	background: #7b7b7b;
+	position: absolute;
+	z-index: -1;
+}
+.inputURL{
+	left: 36%;
+	float: left;
+	position: absolute;
+	width: 27%;
+
+	display: inline-block;
+}
+
+.loginName{
+	width: 99%;
+	margin-top: 6px;
+	height: 27px;
+}
+.on_changes{ position: absolute;width: 97%;margin-left: 0px;margin-top: -9px;z-index:100; list-style:none; background:#FFF; border:1px solid #000; display:none; padding:10px;}
+.on_changes li{margin:8px;padding:4px;text-align: left;color: black;}
+.on_changes li.active{ background:#CEE7FF;}
+
+.arrow{
+	width: 100%;
+	height: 20%;
+	position: relative;
+	top: 36%;
+}
+
+.rightIframe {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 0;
+}
+
+.loading {
+	width: 124px;
+	height: 124px;
+	background: url(/img/mainloading.gif) no-repeat;
+	position: fixed;
+	z-index: 3;
+	display: none;
+}
+
+.dim {
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	background: #000;
+	position: fixed;
+	z-index: 2;
+	display: none;
+}
+
+.job-frame {
+	width: 30%;
+	height: 100%;
+	background-color: black;
+	position: absolute;
+	left: -28%;
+	opacity: 0.8;
+	text-align: left;
+	z-index: 1;
+}
+
+.job-sidebar {
+	width: 8%;
+	height: 100%;
+	float: right;
+	background-color: #393540;
+}
+
+.job-title {
+	position: absolute;
+	width: 30%;
+	top: 6%;
+	left: 3%;
+	height: 3%;
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+}
+
+.job-name {
+	position: absolute;
+	width: 44%;
+	top: 6%;
+	left: 30%;
+	height: 3%;
+	font-size: 22px;
+	border-radius: 7px;
+	color: black;
+	text-indent: 5px;
+}
+
+.divider {
+	position: absolute;
+	width: 92%;
+	height: 1px;
+	background-color: white;
+}
+
+.divider-first {
+	top: 10%;
+}
+
+.items-block {
+	position: absolute;
+	width: 92%;
+	height: 49%;
+	top: 54%;
+}
+
+.item-title {
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+	text-indent: 15px;
+}
+
+.items-table {
+	width: 100%;
+	margin-top: 20px;
+}
+
+.table-row {
+	border-bottom: solid 1px #0f0;
+	height: 40px;
+}
+
+.table-column-1 {
+	width: 70%;
+	height: 40px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-indent: 4em;
+}
+
+.table-column-2 {
+	width:15%;
+}
+
+.table-column-3 {
+	width:15%;
+}
+
+.output-block {
+	position: absolute;
+	width: 92%;
+	height: 40%;
+	top: 14%;
+}
+
+.select-key {
+	position: absolute;
+	width: 40%;
+	height: 10%;
+	left: 3%;
+	color: white;
+	font-weight: bold;
+	font-size: 22px
+}
+
+.select-key-value {
+	position: absolute;
+	width: 80%;
+	height: 10%;
+	color: white;
+	top: 14%;
+	word-wrap: break-word;
+	left: 15%;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.save-project {
+	width: 30%;
+	height: 10%;
+	position: absolute;
+	font-weight: bold;
+	left: 68%;
+	top: 75%;
+	border-radius: 10px;
+}
+
+.none-disp {
+	position: absolute;
+	width: 92%;
+	height: 40%;
+	top: 14%;
+	color: white;
+}

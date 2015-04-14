@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Insert title here</title>
+        <style>
+            
+             * {
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            html, body {
+                background: url(/img/welcomeBg.png) repeat;
+                width: 100%;
+                height: 100%;
+                line-height: 100%;
+                font-size: 120px;
+                font-weight: bold;
+                color: #7b7b7b;
+                text-align: center;
+                text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+            }
+        </style>
+    </head>
+    <body>
+        Online 
+        <script>
+            function Init(){
+                var height = document.documentElement.clientHeight;
+                
+                document.body.style.lineHeight = height + "px";
+                document.body.style.fontSize = height / 6 + "px";
+            }
+            
+            window.onresize = Init;
+            window.onload = Init;
+            function getQueryString(name){
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) 
+                    return unescape(r[2]);
+                return null;
+            }
+			var type=getQueryString('type');
+			if(type=="1"){
+				document.body.innerHTML="Online";				
+			}else{
+				document.body.innerHTML="Offline";			
+			}
+        </script>
+    </body>
+</html>
